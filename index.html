@@ -19,14 +19,15 @@
                 <input type="number" class="" id="numerosPeliculas" placeholder="1,2,3 o 4">
                 <label><input type="checkbox" id="netflix" value="netflix">Netflix</label>
                 <label><input type="checkbox" id="disney" value="disney">Disney</label>
-                <label><input type="checkbox" id="disney" value="amazon">Amazon</label>
+                <label><input type="checkbox" id="amazon" value="amazon">Amazon</label>
                 <label><input type="checkbox" id="plex" value="plex">Plex</label>
             </form>
             <!-- sumar las mensualidades del las plataformas streaming -->
             <label for="">Este es el valor que te cuesta alquilar las peliculas</label>
-            <p></p>
+            <p id="resultValorPelicula"></p>
+            <button onclick="calcularValor()">Calcular valor Peliculas</button>
             <label for="">Este es el valor de todas tus suscripciones</label>
-            <p></p>
+            <p id="resultValorSuscripcion"></p>
         </section>
     </main>
     <footer>
