@@ -11,15 +11,36 @@ let checkAmazon = document.getElementById("amazon");
 let checkPlex = document.getElementById("plex");
 let resultValorPelicula = document.getElementById("resultValorPelicula");
 let resulValorSuscripcion = document.getElementById("resultValorSuscripcion");
+let valorComparacion = document.getElementById("resultComparacion");
 let listcheck = []
 function calcularValor(){
     const numeroPelicula = document.getElementById("numerosPeliculas");
     const value = numeroPelicula.value
-    const valor = valorPelicula * value;
-    resultValorPelicula.innerHTML = "El valor de las peliculas es: $" + valor
+    const valorPelis = valorPelicula * value;
     let valorSuscripcion = 0;
-    valorSuscripcion = listcheck.reduce((a, b) => a + b, 0);   
-    resulValorSuscripcion.innerHTML = "El valor de las suscripciones es: $" + valorSuscripcion;
+    valorSuscripcion = listcheck.reduce((a, b) => a + b, 0);
+
+    if (valorPelis < valorSuscripcion) {
+        valorComparacion.innerHTML = "Es más rentable para ti, el metodo de alquilar peliculas en BlockBuster"
+    }else{
+        valorComparacion.innerHTML = "Es más rentable para ti, el metodo suscribirte a estos streaming, <br> pero estas seguro que puedes ver todos esos filmes dentro de un mes."
+   }
+
+    if (valorPelis == 0) {
+        resultValorPelicula.innerHTML = "Ingrese la cantidad de peliculas!!";
+        valorComparacion.innerHTML = "No se puede calcular, ingrese los datos solicitados";   
+    }else{
+        resultValorPelicula.innerHTML = "El valor de las peliculas es: $" + valorPelis;
+    }
+
+    if (listcheck[0] == null) {
+        resulValorSuscripcion.innerHTML = "Seleccione una plataforma de Streaming."
+        valorComparacion.innerHTML = "No se puede calcular, ingrese los datos solicitados";
+    }else{
+        resulValorSuscripcion.innerHTML = "El valor de la suscripcion es $" + valorSuscripcion;
+    }
+
+ 
 }
 checkNetflix.addEventListener('click', function costoN() {
     let objNetflix = plataforma;
@@ -81,4 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }))
   });
+
+  
 

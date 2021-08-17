@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.header{
+   width: 100%; 
+   height: 7rem;
+   background: #0E3DA4;
+   background-image: url('../img/headerBlock.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   margin-bottom: 1rem;
+  
+}
+.main{
+    width: 100%;
+    height: 70%;
+    background: #F7F7F7; 
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.section__Form{
+    display: flex;
+    flex-direction: column;  
+}
+.section__Form--label{
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: #0E3DA4;
+    text-align: center;
+    font-weight: bold;
+}
+.section__form--chek{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__Form--input{
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    border: whitesmoke 0.1rem solid;
+    background-color:rgba(247, 164, 3, 1);
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+.section__form--chek{
+    margin-top: 2rem
+}
+.form--Check{
+    transform:  scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(3);
+    margin-left: 1.5rem;
+}
+.btnCalcular{
+    margin: 1rem;
+    border-radius: 3rem;
+    border: none;
+    background-color:#F7A403;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.section__label{
+    color: #0E3DA4;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.section__result--Peli{
+    margin-left: 2rem;
+    color: #F7A403;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(4, 67, 154, 0.1);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.footer__container--icons{
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    background-color:#0E3DA4;
+}
+.icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons span{
+    color: #F7A403;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.233);
+}
+
+@media(min-width: 550px){
+    .header{
+        height: 30rem;
+    }
+   
+    body{
+        font-family: 'Roboto Mono', monospace;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .section__Form--label{
+        width: 100%;
+        margin: 3rem;
+        font-size: 8rem;
+    }
+    .section__Form--input{
+        width: 75%;
+        align-self: center;
+        justify-self: center;
+        height: 10rem;
+        border-radius: 5rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .contacontainerSuscrip{
+        display: grid;
+        width: 70%;
+        height: 40rem;
+        align-self: center;
+        justify-self: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form--Check{
+        width: 20%;
+        height: 3rem;
+    }
+    .section__form--chek img{
+        width: 30%;
+    }
+    .btnCalcular{
+        width: 15%;
+        height: 8rem;
+        height: 15rem;
+        align-self: center;
+        font-size: 5rem;
+        background-color: rgb(181, 11, 11);
+    }
+    .div__result{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+       
+    }
+    .section__label{
+        order: 0;
+        height: 6rem;
+        font-size: 4rem;
+        font-weight: bold;
+      
+    }
+    .section__result--Peli{
+        order: 1;
+        height: 5rem;
+        font-size: 5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #F7F7F7;
+        font-weight: bold;
+    }
+    #resultComparacion{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      
+    }
+    .footer__container--icons{
+        width: 100%;
+        height: 20rem;
+        display: grid;
+        background-color:#0E3DA4;
+    }
+    .icons{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 20rem;
+        
+    }
+    
+    
+     
+     
+     
+    }

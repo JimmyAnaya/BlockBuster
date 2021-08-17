@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font/flaticon.css">
     <title>BlockBuster</title>
 </head>
 <body>
-    <head>
-
-    </head>
-    <main>
-        <h1>Blockbuster</h1>
-        <section>
-            <form action="">
-                <label for="" class="">¿Cuantas peliculas quiere ver?</label>
-                <input type="number" class="" id="numerosPeliculas" placeholder="1,2,3 o 4">
-                <label><input type="checkbox" id="netflix" value="netflix">Netflix</label>
-                <label><input type="checkbox" id="disney" value="disney">Disney</label>
-                <label><input type="checkbox" id="amazon" value="amazon">Amazon</label>
-                <label><input type="checkbox" id="plex" value="plex">Plex</label>
+    <header class="header">
+       
+    </header>
+    <main class="main">
+        <section class="section">
+            <form class="section__Form" action="">
+        
+                <label for="" class="section__Form--label">¿Cuantas peliculas quiere ver?</label>
+                <input type="number" class="section__Form--input" id="numerosPeliculas" placeholder="1,2,3 o 4">
+                    <div class="contacontainerSuscrip">
+                        <label class="section__form--chek"><input class= "form--Check" type="checkbox" id="netflix" value="netflix"><img src="./img/logoNetflix.png" alt="Logo Netflix"></label>
+                        <label class="section__form--chek"><input class= "form--Check" type="checkbox" id="disney" value="disney"><img src="./img/logoDisney.png" alt="Logo Disney "></label>
+                        <label class="section__form--chek"><input class= "form--Check" type="checkbox" id="amazon" value="amazon"><img src="./img/logoPrime.png" alt="Logo Amazon"></label>
+                        <label class="section__form--chek"><input class= "form--Check"type="checkbox" id="plex" value="plex"><img src="./img/logoPlex.png" alt="Logo Plex"></label>
+                    </div>
             </form>
-            <!-- sumar las mensualidades del las plataformas streaming -->
-            <label for="">Este es el valor que te cuesta alquilar las peliculas</label>
-            <p id="resultValorPelicula"></p>
-            <button onclick="calcularValor()">Calcular valor Peliculas</button>
-            <label for="">Este es el valor de todas tus suscripciones</label>
-            <p id="resultValorSuscripcion"></p>
         </section>
+        <section class="section">
+            <!-- sumar las mensualidades del las plataformas streaming -->
+            <button class="btnCalcular" onclick="calcularValor()">Calcular valor <br>Peliculas</button>
+            <div class="div__result">
+             <label class="section__label" for="">Este es el valor que te cuesta alquilar las peliculas:</label>
+             <p class="section__result--Peli" id="resultValorPelicula"></p>
+             <label class="section__label" for="" id="enumSus">Este es el valor de todas tus suscripciones:</label>
+             <p class="section__result--Peli" id="resultValorSuscripcion"></p>
+        </div>
+            <p id="resultComparacion" class="section__result--Peli"></p>
+        </section>
+       
     </main>
-    <footer>
-        <p>Contacto</p>
-        <p>Redes</p>
-        <p>Ubicaciòn</p>
-    </footer>
+    <footer class="footer__container--icons">
+        <div class="icons">
+        <a href="/"><span class="flaticon-001-facebook"></span></a>
+        <a href="/"><span class="flaticon-002-twitter"></span></a>
+        <a href="/"><span class="flaticon-011-instagram"></span></a>
+        <a href="/"><span class="flaticon-010-linkedin"></span></a>
+        </div> 
+    </footer> -->
     <script src="./blockBuster.js"></script>
 </body>
 </html>
