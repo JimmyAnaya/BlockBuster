@@ -15,7 +15,7 @@ html{
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
-   margin-bottom: 1rem;
+
   
 }
 .main{
@@ -81,14 +81,15 @@ html{
 .section__label{
     color: #0E3DA4;
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: center;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .section__result--Peli{
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: #F7A403;
     font-size: 2.5rem;
     text-align: center;
@@ -96,7 +97,7 @@ html{
     background-color: rgba(4, 67, 154, 0.1);
     border-radius: 2rem;
     margin-bottom: 1rem;
-    margin-left: 2rem;
+ 
 }
 .footer__container--icons{
     width: 100%;
@@ -118,7 +119,7 @@ html{
     color: rgba(255, 255, 255, 0.233);
 }
 
-@media(min-width: 550px){
+@media(min-width: 850px){
     .header{
         height: 30rem;
     }
